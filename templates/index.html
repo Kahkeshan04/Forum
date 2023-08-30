@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Welcome to My Website</h1>
+    <p>This is the homepage of my website.</p>
+    <h2>Post Your Query</h2>
+    <form id="query-form">
+        <textarea id="query" name="query" placeholder="Type your query here..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Recent Queries</h2>
+    <ul id="query-list"></ul>
+{% endblock %}
